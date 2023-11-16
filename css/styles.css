@@ -12,6 +12,13 @@ body {
   color: #434455;
   background-color: #fff;
 }
+/*============= Mobile First ===========*/
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 320px;
+}
 /*============= Reset start ===========*/
 
 h1,
@@ -27,6 +34,7 @@ p {
 input {
   font-family: inherit;
 }
+
 .list {
   list-style: none;
   margin: 0;
@@ -49,6 +57,7 @@ input {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 
 /*============= Reset end ===========*/
