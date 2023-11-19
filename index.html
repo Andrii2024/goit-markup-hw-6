@@ -67,11 +67,20 @@
             </li>
           </ul>
         </address>
+        <button
+          class="hamburger menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
-      <!-----------Section hero------------>
+      <!-- ---------Section hero---------- -->
       <section class="hero">
         <div class="container-hero container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -146,6 +155,10 @@
             <li class="about-item">
               <img
                 class="about-img"
+                srcset="
+                  ./images/about/img-1_desk.png    1x,
+                  ./images/about/img-1_desk@2x.png 2x
+                "
                 src="./images/about/img-1.jpg"
                 alt="Studio"
                 width="360"
@@ -154,6 +167,10 @@
             <li class="about-item">
               <img
                 class="about-img"
+                srcset="
+                  ./images/about/img-2_71desk.png  1x,
+                  ./images/about/img-2_desk@2x.png 2x
+                "
                 src="./images/about/img-2.jpg"
                 alt="Portfolio"
                 width="360"
@@ -162,6 +179,10 @@
             <li class="about-item">
               <img
                 class="about-img"
+                srcset="
+                  ./images/about/img-3_71desk.png  1x,
+                  ./images/about/img-3_desk@2x.png 2x
+                "
                 src="./images/about/img-3.jpg"
                 alt="Contacts"
                 width="360"
@@ -178,6 +199,10 @@
             <li class="card-item">
               <img
                 class="card-img"
+                srcset="
+                  ./images/amployees/Mark_Guerrero@1x.png 1x,
+                  ./images/amployees/Mark_Guerrero@2x.png 2x
+                "
                 src="./images/amployees/Mark_Guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -238,6 +263,10 @@
             <li class="card-item">
               <img
                 class="card-img"
+                srcset="
+                  ./images/amployees/Tom_Ford@1x.png 1x,
+                  ./images/amployees/Tom_Ford@2x.png 2x
+                "
                 src="./images/amployees/Tom_Ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -298,6 +327,10 @@
             <li class="card-item">
               <img
                 class="card-img"
+                srcset="
+                  ./images/amployees/Camila_Garcia@1x.png 1x,
+                  ./images/amployees/Camila_Garcia@2x.png 2x
+                "
                 src="./images/amployees/Camila_Garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -358,6 +391,10 @@
             <li class="card-item">
               <img
                 class="card-img"
+                srcset="
+                  ./images/amployees/Daniel_Wilson@1x.png 1x,
+                  ./images/amployees/Daniel_Wilson@2x.png 2x
+                "
                 src="./images/amployees/Daniel_Wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -580,7 +617,7 @@
     </footer>
     <!-----------Section Modal open------------>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden container" data-modal>
       <div class="modal">
         <button type="button" class="btn" data-modal-close>
           <svg class="btn-icon" width="8" height="8">
@@ -666,6 +703,97 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+
+    <!-----------  mobile-menu.js  ------------>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="btn-menu-toggle js-close-menu">
+        <svg class="btn-menu-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close "></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item item">
+          <a href="./index.html" target="_self" class="mobile-link">Studio</a>
+        </li>
+        <li class="mobile-menu-item item">
+          <a href="./portfolio.html" target="_self" class="mobile-link"
+            >Portfolio</a
+          >
+        </li>
+        <li class="mobile-menu-item item">
+          <a href="" class="mobile-link">Contacts</a>
+        </li>
+      </ul>
+      <address class="mob-address">
+        <ul class="mob-address-list list">
+          <li class="mob-address-item">
+            <a class="mob-address-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="mob-address-link-tel link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="mob-soc-list list">
+        <li class="mob-soc-item item">
+          <a
+            class="mob-soc-link link"
+            href="https//instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+            ><svg class="mob-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li class="mob-soc-item item">
+          <a
+            class="mob-soc-link link"
+            href="https//twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+            ><svg class="mob-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use></svg
+          ></a>
+        </li>
+        <li class="mob-soc-item item">
+          <a
+            class="mob-soc-link link"
+            href="https//facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook"
+            ><svg class="mob-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="mob-soc-item item">
+          <a
+            class="mob-soc-link link"
+            href="https//inkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+            ><svg class="mob-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <!-----------  mobile-menu.js  ------------>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
