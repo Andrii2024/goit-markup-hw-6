@@ -316,8 +316,6 @@ svg {
   line-height: 1.5;
 }
 
-.container-footer-socials {
-}
 .footer-title {
   display: flex;
   justify-content: center;
@@ -506,8 +504,6 @@ placeholder {
   color: #2e2f42;
   font-weight: 500;
   line-height: 1.5;
-}
-.modal-form {
 }
 
 .frame {
