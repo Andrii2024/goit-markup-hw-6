@@ -469,7 +469,7 @@ placeholder {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 16px 16px;
   transform: translate(-50%, -50%) scale(1);
   width: 320px;
   min-height: 584px;
@@ -481,7 +481,13 @@ placeholder {
 }
 @media only screen and (min-width: 428px) {
   .modal {
+    width: 392px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .modal {
     width: 408px;
+    padding: 72px 24px 24px 24px;
   }
 }
 .btn {
@@ -588,10 +594,21 @@ placeholder {
 }
 .checkbox-input {
 }
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 .modal-form-label-checkbox {
   display: block;
   justify-self: start;
   align-items: center;
+  margin-bottom: 0;
 }
 .checkbox-custom {
   margin-right: 8px;
@@ -615,9 +632,14 @@ placeholder {
 }
 
 .link-input {
-  margin-left: 2px;
+  margin-left: 26px;
   color: #4d5ae5;
   text-decoration: underline;
+}
+@media only screen and (min-width: 428px) {
+  .link-input {
+    margin-left: 2px;
+  }
 }
 .modal-icon-checkbox {
 }
