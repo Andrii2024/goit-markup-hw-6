@@ -687,7 +687,7 @@ placeholder {
     ),
     url(../images/backgraund/_mob1x.png);
 }
-@media only screen and (min-device-pixel-ratio) and (min-resolution: 192dpi) {
+@media only screen and (min-device-pixel-ratio), (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -707,7 +707,8 @@ placeholder {
       url(../images/backgraund/_tab1x.png);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px),
+  (min-device-pixel-ratio) and (min-resolution: 192dpi) {
   .hero {
     max-width: 768px;
     background-image: linear-gradient(
@@ -730,7 +731,8 @@ placeholder {
       url(../images/backgraund/_desk1x.png);
   }
 }
-@media screen and (min-width: 1158px) and (min-device-pixel-ratio) and (min-resolution: 192dpi) {
+@media screen and (min-width: 1158px),
+  (min-device-pixel-ratio) and (min-resolution: 192dpi) {
   .hero {
     max-width: 1440px;
     padding-top: 188px;
