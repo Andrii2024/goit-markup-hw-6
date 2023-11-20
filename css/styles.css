@@ -646,7 +646,7 @@ placeholder {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(./images/backgraund/_mob1x.png);
+    url(../images/backgraund/_mob1x.png);
 }
 @media only screen and (min-device-pixel-ratio) and (min-resolution: 192dpi) {
   .hero {
@@ -654,7 +654,7 @@ placeholder {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(./images/backgraund/_mob@2x.png);
+      url(../images/backgraund/_mob@2x.png);
   }
 }
 
@@ -665,7 +665,7 @@ placeholder {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(./images/backgraund/_tab1x.png);
+      url(../images/backgraund/_tab1x.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio) and (min-resolution: 192dpi) {
@@ -675,7 +675,7 @@ placeholder {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(./images/backgraund/_tab@2x.png);
+      url(../images/backgraund/_tab@2x.png);
   }
 }
 
@@ -688,7 +688,7 @@ placeholder {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(./images/backgraund/_desk1x.png);
+      url(../images/backgraund/_desk1x.png);
   }
 }
 @media screen and (min-width: 1158px) and (min-device-pixel-ratio) and (min-resolution: 192dpi) {
@@ -700,7 +700,7 @@ placeholder {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(./images/backgraund/_desk@2x.png);
+      url(../images/backgraund/_desk@2x.png);
   }
 }
 
