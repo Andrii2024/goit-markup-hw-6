@@ -728,7 +728,7 @@ placeholder {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/backgraund/_desk1x.png);
+      url(../images/backgraund/people-office1_desk.jpg);
   }
 }
 @media screen and (min-width: 1158px),
@@ -741,7 +741,7 @@ placeholder {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/backgraund/_desk@2x.png);
+      url(../images/backgraund/people-office1_desk@2x.jpg);
   }
 }
 
