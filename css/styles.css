@@ -4,7 +4,6 @@
 }
 
 body {
-  max-width: 1440px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -1080,8 +1079,20 @@ placeholder {
 /*============= SECTION hero ===========*/
 
 .button-hero {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .button-hero {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .button-hero {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 }
 .container-button {
 }
@@ -1089,18 +1100,31 @@ placeholder {
 .button-hero-list {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
-  margin-bottom: 72px;
+  padding-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .button-hero-list {
+    padding-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .button-hero-list {
+    padding-bottom: 72px;
+  }
 }
 .button-hero-item {
 }
 
 .button-hero-item-button {
-  padding: 12px 24px;
+  padding: 8px 16px;
 
   border: 1px solid #e7e9fc;
   color: #4d5ae5;
   text-align: center;
+
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -1109,6 +1133,11 @@ placeholder {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media only screen and (min-width: 768px) {
+  .button-hero-item-button {
+    padding: 12px 24px;
+  }
 }
 
 .button-hero-item-button:hover,
@@ -1125,22 +1154,47 @@ placeholder {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
-  row-gap: 48px;
 }
-.list {
+@media only screen and (min-width: 768px) {
+  .portfolio-list {
+    gap: 24px;
+    row-gap: 72px;
+  }
 }
+@media only screen and (min-width: 1158px) {
+  .portfolio-list {
+    row-gap: 48px;
+  }
+}
+
 .portfolio-item {
+  width: 360px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-item {
+    width: 356px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-item {
+    width: 360px;
+  }
 }
 .portfolio-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-link:hover .hidden-p,
 .portfolio-link:focus .hidden-p {
   transform: translateY(0%);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .hidden {
