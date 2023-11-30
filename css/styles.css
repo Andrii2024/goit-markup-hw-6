@@ -403,7 +403,7 @@ svg {
 }
 .form-input {
   padding-left: 16px;
-  min-width: 290px;
+  width: 290px;
   height: 40px;
   color: #fff;
   font-size: 12px;
