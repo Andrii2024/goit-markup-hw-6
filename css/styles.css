@@ -145,7 +145,6 @@ svg {
 .header-nav-item {
 }
 .header-nav-link {
-  position: relative;
   display: block;
   padding: 24px 0 24px;
   color: #2e2f42;
@@ -154,10 +153,11 @@ svg {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-link.current {
+.current {
+  position: relative;
   color: #404bbf;
 }
-.header-nav-link.current::after {
+.current::after {
   content: "";
   display: block;
   position: absolute;
@@ -168,10 +168,8 @@ svg {
   background-color: #404bbf;
   border-radius: 2px;
 }
-
 .header-nav-link:active {
-  color: #404bbf;
-  text-decoration: underline;
+  color: #31d0aa;
 }
 .header-nav-link:hover {
   color: #404bbf;
@@ -843,12 +841,13 @@ placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 264px;
     height: 112px;
     margin-bottom: 8px;
     border-radius: 4px;
     background: #f4f4fd;
+    box-shadow: 5px 1px 15px rgba(46, 47, 66, 0.2),
+      5px 1px 5px rgba(46, 47, 66, 0.3), 10px 10px 10px rgba(46, 47, 66, 0.1);
   }
 }
 .description-icon {
@@ -918,6 +917,8 @@ placeholder {
 .about-item {
   width: 360px;
   border: 1px solid #e7e9fc;
+  box-shadow: 5px 1px 15px rgba(46, 47, 66, 0.2),
+    5px 8px 5px rgba(46, 47, 66, 0.3), 10px 10px 10px rgba(46, 47, 66, 0.1);
 }
 
 /* <!-----------Section card------------> */
@@ -1006,6 +1007,8 @@ placeholder {
 .card-link-icon:hover,
 .card-link-icon:focus {
   background-color: #404bbf;
+  box-shadow: 5px 1px 5px rgba(46, 47, 66, 0.2),
+    5px 1px 5px rgba(46, 47, 66, 0.3), 1px 1px 1px rgba(46, 47, 66, 0.1);
 }
 
 .card-icon-svg {
@@ -1054,7 +1057,8 @@ placeholder {
   justify-content: center;
   align-items: center;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   border: 1px solid #8e8f99;
 }
@@ -1063,6 +1067,8 @@ placeholder {
 .clients-link:focus {
   color: #404bbf;
   border-color: #404bbf;
+  box-shadow: 5px 1px 5px rgba(46, 47, 66, 0.2),
+    5px 1px 5px rgba(46, 47, 66, 0.3), 1px 1px 1px rgba(46, 47, 66, 0.1);
 }
 
 .clients-icon {
